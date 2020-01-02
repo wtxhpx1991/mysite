@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}
+    blog titles
+{% endblock %}
+{% block content %}
+    <div class="row text-center vertical-middle-sm">
+        <h1>my blog</h1>
+
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-8">
+            <ul>
+                {% for blog in blogs %}
+                    <li>{{ blog.title }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <h2>announcement</h2>
+            <p> hahaah </p>
+        </div>
+    </div>
+
+{% endblock %}
