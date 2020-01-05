@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('', views.blog_title),
-    path('<int:article_id>/', views.blog_article)
+    path('<int:article_id>/', views.blog_article)#匹配一个数字字符
 ]
